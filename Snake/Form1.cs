@@ -268,6 +268,10 @@ namespace Snake
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.R)
+            {
+                resetgame1();
+            }
             if (e.KeyCode == Keys.W || e.KeyCode == Keys.Up)
             {
                 if (!lastMoveDOWN)
