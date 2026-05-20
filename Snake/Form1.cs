@@ -9,7 +9,8 @@ namespace Snake
     {
         Random xd = new Random();
         List<Point> waz = new List<Point>();
-        Point jablko = new Point();
+        Point jablko = new Point(); ////
+        
         int score = 1;
         int highscore = 1;
         int speed = 20;
