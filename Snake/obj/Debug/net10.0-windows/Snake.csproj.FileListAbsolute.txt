@@ -1,0 +1,51 @@
+C:\Users\ZSP1\source\repos\Snake\Snake\bin\Debug\net10.0-windows\Snake.exe
+C:\Users\ZSP1\source\repos\Snake\Snake\bin\Debug\net10.0-windows\Snake.deps.json
+C:\Users\ZSP1\source\repos\Snake\Snake\bin\Debug\net10.0-windows\Snake.runtimeconfig.json
+C:\Users\ZSP1\source\repos\Snake\Snake\bin\Debug\net10.0-windows\Snake.dll
+C:\Users\ZSP1\source\repos\Snake\Snake\bin\Debug\net10.0-windows\Snake.pdb
+C:\Users\ZSP1\source\repos\Snake\Snake\obj\Debug\net10.0-windows\Snake.Form1.resources
+C:\Users\ZSP1\source\repos\Snake\Snake\obj\Debug\net10.0-windows\Snake.csproj.GenerateResource.cache
+C:\Users\ZSP1\source\repos\Snake\Snake\obj\Debug\net10.0-windows\Snake.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZSP1\source\repos\Snake\Snake\obj\Debug\net10.0-windows\Snake.AssemblyInfoInputs.cache
+C:\Users\ZSP1\source\repos\Snake\Snake\obj\Debug\net10.0-windows\Snake.AssemblyInfo.cs
+C:\Users\ZSP1\source\repos\Snake\Snake\obj\Debug\net10.0-windows\Snake.csproj.CoreCompileInputs.cache
+C:\Users\ZSP1\source\repos\Snake\Snake\obj\Debug\net10.0-windows\Snake.dll
+C:\Users\ZSP1\source\repos\Snake\Snake\obj\Debug\net10.0-windows\refint\Snake.dll
+C:\Users\ZSP1\source\repos\Snake\Snake\obj\Debug\net10.0-windows\Snake.pdb
+C:\Users\ZSP1\source\repos\Snake\Snake\obj\Debug\net10.0-windows\Snake.genruntimeconfig.cache
+C:\Users\ZSP1\source\repos\Snake\Snake\obj\Debug\net10.0-windows\ref\Snake.dll
+C:\Users\ZSP1\source\repos\Snake\Snake\obj\Debug\net10.0-windows\Snake.Properties.Resources.resources
+D:\gavno kakoeto\Snake-main\Snake\bin\Debug\net10.0-windows\Snake.exe
+D:\gavno kakoeto\Snake-main\Snake\bin\Debug\net10.0-windows\Snake.deps.json
+D:\gavno kakoeto\Snake-main\Snake\bin\Debug\net10.0-windows\Snake.runtimeconfig.json
+D:\gavno kakoeto\Snake-main\Snake\bin\Debug\net10.0-windows\Snake.dll
+D:\gavno kakoeto\Snake-main\Snake\bin\Debug\net10.0-windows\Snake.pdb
+D:\gavno kakoeto\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.Form1.resources
+D:\gavno kakoeto\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.Properties.Resources.resources
+D:\gavno kakoeto\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.csproj.GenerateResource.cache
+D:\gavno kakoeto\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.GeneratedMSBuildEditorConfig.editorconfig
+D:\gavno kakoeto\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.AssemblyInfoInputs.cache
+D:\gavno kakoeto\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.AssemblyInfo.cs
+D:\gavno kakoeto\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.csproj.CoreCompileInputs.cache
+D:\gavno kakoeto\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.dll
+D:\gavno kakoeto\Snake-main\Snake\obj\Debug\net10.0-windows\refint\Snake.dll
+D:\gavno kakoeto\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.pdb
+D:\gavno kakoeto\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.genruntimeconfig.cache
+D:\gavno kakoeto\Snake-main\Snake\obj\Debug\net10.0-windows\ref\Snake.dll
+D:\Snake-main\Snake\bin\Debug\net10.0-windows\Snake.exe
+D:\Snake-main\Snake\bin\Debug\net10.0-windows\Snake.deps.json
+D:\Snake-main\Snake\bin\Debug\net10.0-windows\Snake.runtimeconfig.json
+D:\Snake-main\Snake\bin\Debug\net10.0-windows\Snake.dll
+D:\Snake-main\Snake\bin\Debug\net10.0-windows\Snake.pdb
+D:\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.Form1.resources
+D:\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.Properties.Resources.resources
+D:\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.csproj.GenerateResource.cache
+D:\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.GeneratedMSBuildEditorConfig.editorconfig
+D:\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.AssemblyInfoInputs.cache
+D:\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.AssemblyInfo.cs
+D:\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.csproj.CoreCompileInputs.cache
+D:\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.dll
+D:\Snake-main\Snake\obj\Debug\net10.0-windows\refint\Snake.dll
+D:\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.pdb
+D:\Snake-main\Snake\obj\Debug\net10.0-windows\Snake.genruntimeconfig.cache
+D:\Snake-main\Snake\obj\Debug\net10.0-windows\ref\Snake.dll
