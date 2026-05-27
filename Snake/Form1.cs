@@ -30,6 +30,9 @@ namespace Snake
         bool win = false;
         bool pokazano = false;
         int Forpaint = 15;
+        bool dobremiejscedlajabłka;
+        int jablkoY;
+        int jablkoX;
         public Form1()
         {
             InitializeComponent();
@@ -85,14 +88,23 @@ namespace Snake
                 {
                     score++;
                 }
-                int jablkoX = xd.Next(0, this.ClientSize.Width / rozmiarkwadrata) * rozmiarkwadrata;
-                int jablkoY = xd.Next(0, this.ClientSize.Height / rozmiarkwadrata) * rozmiarkwadrata;
-                while (nowaglowa.X == jablkoX && nowaglowa.Y == jablkoY)
+                dobremiejscedlajabłka = false;
+                while (dobremiejscedlajabłka == false)
                 {
                     jablkoX = xd.Next(0, this.ClientSize.Width / rozmiarkwadrata) * rozmiarkwadrata;
                     jablkoY = xd.Next(0, this.ClientSize.Height / rozmiarkwadrata) * rozmiarkwadrata;
+                    dobremiejscedlajabłka = true;
+                    foreach (Point segment in waz)
+                    {
+                        if (jablkoX == segment.X && jablkoY == segment.Y)
+                        {
+                            dobremiejscedlajabłka = false;
+                            break;
+                        }
+
+                    }
                 }
-                    jablko = new Point(jablkoX, jablkoY);
+                jablko = new Point(jablkoX, jablkoY);
                 if (cheat == true)
                 {
                     for (int i = 1; i < 20; i++)
