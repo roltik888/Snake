@@ -29,6 +29,7 @@ namespace Snake
         int dlawygrania;
         bool win = false;
         bool pokazano = false;
+        int Forpaint = 15;
         public Form1()
         {
             InitializeComponent();
@@ -86,10 +87,15 @@ namespace Snake
                 }
                 int jablkoX = xd.Next(0, this.ClientSize.Width / rozmiarkwadrata) * rozmiarkwadrata;
                 int jablkoY = xd.Next(0, this.ClientSize.Height / rozmiarkwadrata) * rozmiarkwadrata;
-                jablko = new Point(jablkoX, jablkoY);
+                while (nowaglowa.X == jablkoX && nowaglowa.Y == jablkoY)
+                {
+                    jablkoX = xd.Next(0, this.ClientSize.Width / rozmiarkwadrata) * rozmiarkwadrata;
+                    jablkoY = xd.Next(0, this.ClientSize.Height / rozmiarkwadrata) * rozmiarkwadrata;
+                }
+                    jablko = new Point(jablkoX, jablkoY);
                 if (cheat == true)
                 {
-                    for (int i = 1; i < 6; i++)
+                    for (int i = 1; i < 20; i++)
                     {
                         waz.Add(waz[waz.Count - 1]);
                     }
@@ -157,10 +163,53 @@ namespace Snake
         protected override void OnPaint(PaintEventArgs e)
         {
             Graphics g = e.Graphics;
-            g.FillRectangle(Brushes.Red, jablko.X, jablko.Y, rozmiarkwadrata, rozmiarkwadrata);
+            int p = rozmiarkwadrata / 5;
+            int[,] grafikaJablka = new int[5, 5] {
+        { 0, 0, 2, 2, 0 },
+        { 0, 1, 1, 1, 0 },
+        { 1, 1, 1, 1, 1 },
+        { 1, 1, 1, 1, 1 },
+        { 0, 1, 1, 1, 0 }
+    };
+            for (int row = 0; row < 5; row++)
+            {
+                for (int col = 0; col < 5; col++)
+                {
+                    Brush kolorPiksela = null;
+                    if (grafikaJablka[row, col] == 1) kolorPiksela = Brushes.Red;
+                    else if (grafikaJablka[row, col] == 2) kolorPiksela = Brushes.LimeGreen;
+
+                    if (kolorPiksela != null)
+                    {
+                        g.FillRectangle(kolorPiksela, jablko.X + (col * p), jablko.Y + (row * p), p, p);
+                    }
+                }
+            }
             foreach (Point segment in waz)
             {
                 g.FillRectangle(Brushes.Black, segment.X, segment.Y, rozmiarkwadrata, rozmiarkwadrata);
+            }
+            int gg = rozmiarkwadrata / 5;
+            int[,] grafikawenza = new int[5, 5] {
+        { 1, 1, 2, 1, 1 },
+        { 1, 1, 2, 1, 1 },
+        { 2, 2, 2, 2, 2 },
+        { 1, 1, 2, 1, 1 },
+        { 1, 1, 2, 1, 1 }
+    };
+            for (int row = 0; row < 5; row++)
+            {
+                for (int col = 0; col < 5; col++)
+                {
+                    Brush kolorPiksela = null;
+                    if (grafikawenza[row, col] == 1) kolorPiksela = Brushes.Black;
+                    else if (grafikawenza[row, col] == 2) kolorPiksela = Brushes.White;
+
+                    if (kolorPiksela != null)
+                    {
+                        g.FillRectangle(kolorPiksela, waz[0].X + (col * gg), waz[0].Y + (row * gg), gg, gg);
+                    }
+                }
             }
             for (int x = 0; x < this.Width; x += rozmiarkwadrata)
                 g.DrawLine(Pens.DarkGreen, x, 0, x, this.Height);
