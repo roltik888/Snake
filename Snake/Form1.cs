@@ -35,6 +35,7 @@ namespace Snake
         int jablkoX;
         bool timerdodano = false;
         int dodatkowaspeed = 0;
+        int dlaspeed = 0;
         public Form1()
         {
             InitializeComponent();
@@ -87,9 +88,9 @@ namespace Snake
             {
                 timerdodano = false;
                 if (timerdodano == false) {
-                timer1.Interval -= 1;
+                timer1.Interval -= dodatkowaspeed;
                     timerdodano = true;
-                    dodatkowaspeed++;
+                    dlaspeed += dodatkowaspeed;
                 }
                 jablkozjedzone = true;
                 if (normal == true)
@@ -239,7 +240,7 @@ namespace Snake
             if (normal == true)
             {
                 g.DrawString($"Score: {score}", new Font("Arial", 12), Brushes.White, 50, 10);
-                g.DrawString($"Speed: {dodatkowaspeed}", new Font("Arial", 12), Brushes.White, 300, 10);
+                g.DrawString($"Speed: {dlaspeed}", new Font("Arial", 12), Brushes.White, 300, 10);
                 g.DrawString($"High score: {highscore}", new Font("Arial", 12), Brushes.White, 600, 10);
             }
             if (cheat == true)
@@ -311,6 +312,8 @@ namespace Snake
         {
             panelmenu.Visible = false;
             this.Focus();
+            dodatkowaspeed = 1;
+            dlaspeed = 50;
             dlawygrania = 50;
             timer1.Interval = 200;
             timer1.Start();
@@ -321,6 +324,8 @@ namespace Snake
         {
             panelmenu.Visible = false;
             this.Focus();
+            dlaspeed = 200;
+            dodatkowaspeed = 2; 
             dlawygrania = 300;
             timer1.Interval = 50;
             timer1.Start();
@@ -330,6 +335,8 @@ namespace Snake
         {
             panelmenu.Visible = false;
             this.Focus();
+            dlaspeed = 100;
+            dodatkowaspeed = 1;
             dlawygrania = 150;
             timer1.Interval = 100;
             timer1.Start();
